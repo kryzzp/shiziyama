@@ -10,7 +10,7 @@
 <a href="https://github.com/zeezxyz/fg-api"><img title="Author" src="https://img.shields.io/badge/Author-zeezxyz-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/zeezxyz/fg-api"><img title="Followers" src="https://img.shields.io/github/followers/zeezxyz2803?color=blue&style=flat-square"></a>
+<a href="https://github.com/zeezxyz"><img title="Followers" src="https://img.shields.io/github/followers/zeezxyz2803?color=blue&style=flat-square"></a>
 <a href="https://github.com/zeezxyz/fg-api"><img title="Stars" src="https://img.shields.io/github/stars/zeezxyz/fg-api?color=red&style=flat-square"></a>
 <a href="https://github.com/zeezxyz/fg-api/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zeezxyz/fg-api?color=red&style=flat-square"></a>
 <a href="https://github.com/zeezxyz/fg-api/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zeezxyz/fg-api?label=Watchers&color=blue&style=flat-square"></a>
