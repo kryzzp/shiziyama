@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fuegoleon Api V1.0.0">
+    <meta name="keywords" content="RestApi, Botwa">
+    <meta name="author" content="Ditzzy">
+    <title>Fuegoleon - API</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://assets.shiziyama.ml/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://assets.shiziyama.ml/plugins/perfectscroll/perfect-scrollbar.css" rel="stylesheet">
+    <link href="https://assets.shiziyama.ml/plugins/pace/pace.css" rel="stylesheet">
+    <link href="https://assets.shiziyama.ml/plugins/highlight/styles/github-gist.css" rel="stylesheet">
+    <script src="https://assets.shiziyama.ml/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <link href="https://assets.shiziyama.ml/css/main.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+  
+ <link rel="icon" type="image/png" sizes="32x32" href="https://telegra.ph/file/ef15d5b19488b2ec40e6b.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://telegra.ph/file/ef15d5b19488b2ec40e6b.png" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+</head>
+
+<body>
+	<div class="app align-content-stretch d-flex flex-wrap">
+    <div class="app-sidebar">
+    <div class="logo">
+	 <a href="#" class="logo-icon"><span class="logo-text">FUEGOLEON</span></a>
+   <div class="sidebar-user-switcher user-activity-online">
+       <a href="#">
+       <img src="https://telegra.ph/file/ef15d5b19488b2ec40e6b.png">
+       
+       </a>
+                                    
+</div>
+   </div>
+   <div class="app-menu">
+   <center>	<p style="font-size:25px; "><b>Fuegoleon - API</b></p></center>
+    	
+       <ul class="accordion-menu">
+   <li class="sidebar-title">
+                    Apps
+     <li>
+ <a href="#"><i class="material-icons-two-tone">download</i>Downloader & Media<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+ <li>     <a target="_blank" href="/api/music/joox?query=akad&apikey=APIKEY" target="_blank" >Joox search</a>
+ <li>     <a target="_blank" href="/api/download/joox3?query=akad&apikey=APIKEY" target="_blank" >Joox search2</a>
+ <li>     <a target="_blank" href="/api/download/joox2?query=akad&apikey=APIKEY" target="_blank" >Joox Media</a>
+ <li>     <a target="_blank" href="/api/download/smule?url=https://www.smule.com/recording/lewis-capaldi-someone-you-loved-slower-piano/1112691877_3200708124&apikey=APIKEY" target="_blank" >Smule Download</a>
+ <li>     <a target="_blank" href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Video</a>
+ <li>     <a target="_blank" href="/api/download/ytmp42?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Video2</a>
+ <li>     <a target="_blank" href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Audio</a>
+ <li>     <a target="_blank" href="/api/download/ytmp32?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Audio2</a>
+ <li>     <a target="_blank" href="/api/downloader/facebook?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=APIKEY" target="_blank" >FB download</a>
+ <li>     <a target="_blank" href="/api/downloader/fb?url=https://www.facebook.com/100044139564343/posts/375127390635243&apikey=APIKEY" target="_blank" >FB download2</a>
+ <li>     <a target="_blank" href="/api/music/spotify?query=akad&apikey=APIKEY" target="_blank" >Spotify search</a>
+ <li>     <a target="_blank" href="/api/downloader/pinterest?q=aeshestic&apikey=APIKEY" target="_blank" >pinterest search</a>
+ <li>     <a target="_blank" href="/api/download/unplash?q=good night&apikey=APIKEY" target="_blank" >unplash search</a>
+ <li>     <a target="_blank" href="/api/download/sticker?q=patrick&apikey=APIKEY" target="_blank" >stickerWA search</a>
+ <li>     <a target="_blank" href="/api/download/stickerline?url=https://store.line.me/stickershop/product/9409/id=APIKEY" target="_blank" >stickerLINE search</a>
+ <li>     <a target="_blank" href="/api/download/shoppe?q=jaket gunung&apikey=APIKEY" target="_blank" >shoppe search</a>
+ <li>     <a target="_blank" href="/api/downloader/wallpaperflare?query=anime&apikey=APIKEY" target="_blank" >wallpaperflare search</a>
+ <li>     <a target="_blank" href="/api/download/googleimg?query=kucing&apikey=APIKEY" target="_blank" >google img search</a>
+ <li>     <a target="_blank" href="/api/download/apk?query=whatsapp&apikey=APIKEY" target="_blank" >Apk search</a>
+ <li>     <a target="_blank" href="/api/download/apkdl?url=URL_NYA&apikey=APIKEY" target="_blank" >Apk download</a>
+ <li>     <a target="_blank" href="/api/yt/playmp3?query=surender&apikey=APIKEY" target="_blank" >play mp3</a>
+   <li>     <a target="_blank" href="/api/yt/playmp4?query=surender&apikey=APIKEY" target="_blank" >play mp4</a>
+			        <li>     <a target="_blank" href="/api/yt/search?query=surender&apikey=APIKEY" target="_blank" >yt search</a>
+ <li>     <a target="_blank" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=APIKEY" target="_blank" >Tiktok download</a>
+ <li>     <a target="_blank" href="/api/download/tiktok2?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=APIKEY" target="_blank" >Tiktok download2</a>
+ <li>     <a target="_blank" href="/api/download/ig?url=https://www.instagram.com/p/CUU8PwHhU-9/?utm_medium=copy_link&apikey=APIKEY" target="_blank" >IG POST download</a>
+ <li>     <a target="_blank" href="/api/downloader/igtv?url=https://www.instagram.com/tv/CSW1PMohXDm&apikey=APIKEY" target="_blank" >IG TV download</a>
+ <li>     <a target="_blank" href="/api/downloader/igstory?username=attahalilintar&apikey=APIKEY" target="_blank" >IG STORY</a>
+ <li>     <a target="_blank" href="/api/download/mediafire?url=https://www.mediafire.com/file/v035jsup2d2wp1n/textprome.js/file&apikey=APIKEY" target="_blank" >Mediafire download</a>
+ <li>     <a target="_blank" href="/api/downloader/twitterimg?url=https://twitter.com/renaldypjs/status/1343516524934438912&apikey=APIKEY" target="_blank" >Twitter img download</a>
+ <li>     <a target="_blank" href="/api/downloader/twittervid?url=https://twitter.com/weareoneEXO/status/1344811074864914433&apikey=APIKEY" target="_blank" >Twitter vid download</a>
+ <li>     <a target="_blank" href="/api/stalk/ig?username=_sekhaa&apikey=APIKEY" target="_blank" >Stalk Instagram</a>
+ <li>     <a target="_blank" href="/api/stalk/ig2?username=_sekhaa&apikey=APIKEY" target="_blank" >Stalk Instagram2</a>
+ <li>     <a target="_blank" href="/api/stalk/github?username=inigw&apikey=APIKEY" target="_blank" >Stalk Github</a>
+ <li>     <a target="_blank" href="/api/stalk/tiktok?username=attahalilintar&apikey=APIKEY" target="_blank" >stalk tiktok</a>
+ <li>     <a target="_blank" href="/api/stalk/npm?query=hx&apikey=APIKEY" target="_blank" >stalk npm</a>
+ <li>     <a target="_blank" href="/api/downloader/pornhub?query=japan&apikey=APIKEY" target="_blank" >Pornhub search</a>
+ <li>     <a target="_blank" href="/api/downloader/xnxx?query=japan&apikey=APIKEY" target="_blank" >Xnxx search</a>
+ <li>     <a target="_blank" href="/api/downloader/xvideo?query=japan&apikey=APIKEY" target="_blank" >Xvideos search</a>                             
+                   
+ </ul>
+       </li>
+    <li>
+ <a href="#"><i class="material-icons-two-tone">image</i>Image maker<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a href="/api/maker/harta-tahta?text=gwganz&apikey=APIKEY" target="_blank" >harta tahta</a>
+ <li>     <a href="/api/maker/silverbutton?text=gwganz&apikey=APIKEY" target="_blank" >silver button</a>
+ <li>     <a href="/api/maker/goldbutton?text=gwganz&apikey=APIKEY" target="_blank" >gold button</a>
+ <li>     <a href="/api/maker/nulis?text=gwganz&apikey=APIKEY" target="_blank" >nulis</a>
+ <li>     <a href="/api/maker/emoji2png?text=%F0%9F%98%85&apikey=APIKEY" target="_blank" >emoji to png</a>
+ <li class="sidebar-title">
+                    Textprome Features</li>
+ <li>     <a href="/api/textpro/magma?text=Revita&apikey=APIKEY" target="_blank" >magma</a>
+<li>     <a href="/api/textpro/hallowen-text?text=Revita&apikey=APIKEY" target="_blank" >hallowen effect</a>
+<li>     <a href="/api/textpro/neon-light?text=Revita&apikey=APIKEY" target="_blank" >Neon light</a>
+<li>     <a href="/api/textpro/broken-glass?text=Revita&apikey=APIKEY" target="_blank" >broken glass</a>
+<li>     <a href="/api/textpro/art-papper?text=Revita&apikey=APIKEY" target="_blank" >Art papper</a>
+<li>     <a href="/api/textpro/glossy?text=Revita&apikey=APIKEY" target="_blank" >glossy</a>
+<li>     <a href="/api/textpro/water-color?text=Revita&apikey=APIKEY" target="_blank" >water color</a>
+<li>     <a href="/api/textpro/multi-color?text=Revita&apikey=APIKEY" target="_blank" >multi color</a>
+<li>     <a href="/api/textpro/neon-devil?text=Revita&apikey=APIKEY" target="_blank" >Neon devil</a>
+<li>     <a href="/api/textpro/sky-text?text=Revita&apikey=APIKEY" target="_blank" >sky text</a>
+<li>     <a href="/api/textpro/luxury?text=Revita&apikey=APIKEY" target="_blank" >luxury</a>
+<li>     <a href="/api/textpro/vintage?text=Revita&text2=canszz&apikey=APIKEY" target="_blank" >vintage</a>
+<li>     <a href="/api/textpro/writing?text=Revita&apikey=APIKEY" target="_blank" >Writing</a>
+<li>     <a href="/api/textpro/engraved?text=Revita&apikey=APIKEY" target="_blank" >Engraved</a>
+<li>     <a href="/api/textpro/glue-text?text=Revita&apikey=APIKEY" target="_blank" >Glue text</a>
+<li>     <a href="/api/textpro/pornhub?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >porn HUB</a>
+<li>     <a href="/api/textpro/holograpic?text=Revita&apikey=APIKEY" target="_blank" >holograpic</a>
+<li>     <a href="/api/textpro/deluxe-silver?text=Revita&apikey=APIKEY" target="_blank" >deluxe silver</a>
+<li>     <a href="/api/textpro/fabric?text=Revita&apikey=APIKEY" target="_blank" >Fabric</a>
+<li>     <a href="/api/textpro/wicker?text=Revita&apikey=APIKEY" target="_blank" >wicker</a>
+<li>     <a href="/api/textpro/larva?text=Revita&apikey=APIKEY" target="_blank" >Larva</a>
+<li>     <a href="/api/textpro/toxic-bokeh?text=Revita&apikey=APIKEY" target="_blank" >Toxic</a>
+<li>     <a href="/api/textpro/stroberi?text=Revita&apikey=APIKEY" target="_blank" >strobery</a>
+<li>     <a href="/api/textpro/koi?text=Revita&apikey=APIKEY" target="_blank" >koi pish</a>
+<li>     <a href="/api/textpro/bread?text=Revita&apikey=APIKEY" target="_blank" >Bread</a>
+<li>     <a href="/api/textpro/horor-blood?text=Revita&apikey=APIKEY" target="_blank" >horor blood</a>
+<li>     <a href="/api/textpro/honey?text=Revita&apikey=APIKEY" target="_blank" >honey</a>
+<li>     <a href="/api/textpro/ice?text=Revita&apikey=APIKEY" target="_blank" >Ice</a>
+<li>     <a href="/api/textpro/rusty?text=Revita&apikey=APIKEY" target="_blank" >Rusty effect</a>
+        <li>     <a href="/api/textpro/captain?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >captain Amerika</a>
+       <li>     <a href="/api/textpro/3d-gradient?text=Revita&apikey=APIKEY" target="_blank" >gradien</a>
+       <li>     <a href="/api/textpro/christmas?text=Revita&apikey=APIKEY" target="_blank" >christmas</a>
+       <li>     <a href="/api/textpro/drop-water?text=Revita&apikey=APIKEY" target="_blank" >drop water</a>
+       <li>     <a href="/api/textpro/black-pink?text=Revita&apikey=APIKEY" target="_blank" >blackpink</a>
+       <li>     <a href="/api/textpro/logo-wolf?text=Revita&text2&apikey=APIKEY" target="_blank" >Logo Wolf</a>
+       <li>     <a href="/api/textpro/natural-leavest?text=Revita&apikey=APIKEY" target="_blank" >Natural leavest</a>
+       <li>     <a href="/api/textpro/logo-wolf2?text=Revita&text2&apikey=APIKEY" target="_blank" >Logo Wolf 2</a>
+       <li>     <a href="/api/textpro/harry-potter?text=Revita&apikey=APIKEY" target="_blank" >Harry Potter</a>
+       <li>     <a href="/api/textpro/3dstone?text=Revita&apikey=APIKEY" target="_blank" >3D stone</a>
+       <li>     <a href="/api/textpro/1917?text=Revita&apikey=APIKEY" target="_blank" >1917</a>
+       <li>     <a href="/api/textpro/thunder2?text=Revita&apikey=APIKEY" target="_blank" >Thunder 2</a>
+       <li>     <a href="/api/textpro/space?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Space</a>
+       <li>     <a href="/api/textpro/joker-logo?text=Revita&apikey=APIKEY" target="_blank" >Joker logo</a>
+       <li>     <a href="/api/textpro/hallowen?text=Revita&apikey=APIKEY" target="_blank" >hallowen</a>
+       <li>     <a href="/api/textpro/blood?text=Revita&apikey=APIKEY" target="_blank" >Blood text</a>
+       <li>     <a href="/api/textpro/astone?text=Revita&apikey=APIKEY" target="_blank" >Astone</a>
+       <li>     <a href="/api/textpro/grafity-text?text=Revita&apikey=APIKEY" target="_blank" >Grafity text</a>
+       <li>     <a href="/api/textpro/grafity-text2?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Grafity text2</a>
+       <li>     <a href="/api/textpro/ninja-logo?text=Revita&text2=canszz&apikey=APIKEY" target="_blank" >Ninja logo</a>
+       <li>     <a href="/api/textpro/lion-logo?text=Revita&text2=cansz&apikey=APIKEY" target="_blank" >lion logo</a>
+       <li>     <a href="/api/textpro/avengers-logo?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Avengers</a>
+       <li>     <a href="/api/textpro/marvel-logo2?text=Revita&text2=cans" target="_blank" >Marvel studio</a>
+         <li class="sidebar-title">
+                    Photoxry Features</li>
+   <li>     <a href="/api/photooxy/army?text=Revita&apikey=APIKEY" target="_blank" >Army text</a>
+ <li>     <a href="/api/maker/matrix?text=Revita&apikey=APIKEY" target="_blank" >matrix</a>
+ <li>     <a href="/api/maker/pubglogo?text1=Revita&text2=cans&apikey=APIKEY" target="_blank" >PUBG</a>
+ <li>     <a href="/api/maker/breakwall?text=Revita&apikey=APIKEY" target="_blank" >breakwall</a>
+ <li>     <a href="/api/photooxy/butterfly?text=Revita&apikey=APIKEY" target="_blank" >butterfly</a>
+ <li>     <a href="/api/photooxy/naruto?text1=Revita&apikey=APIKEY" target="_blank" >naruto</a>
+ <li>     <a href="/api/photooxy/smoke?text1=Revita&apikey=APIKEY" target="_blank" >smoke text</a> 
+ <li>     <a href="/api/photooxy/burn-papper?text=Revita&apikey=APIKEY" target="_blank" >burn papper</a>
+ <li>     <a href="/api/photooxy/love-message?text=Revita&apikey=APIKEY" target="_blank" >love message</a>
+ <li>     <a href="/api/photooxy/love-text?text=Revita&apikey=APIKEY" target="_blank" >love text</a>
+ <li>     <a href="/api/photooxy/coffe-cup?text=Revita&apikey=APIKEY" target="_blank" >coffe cup</a>
+ <li>     <a href="/api/photooxy/double-heart?text=Revita&apikey=APIKEY" target="_blank" >double heart</a>
+ <li>     <a href="/api/photooxy/glitch?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >glitch effect</a>
+ <li>     <a href="/api/photooxy/message-under-grass?text=Revita&apikey=APIKEY" target="_blank" >message under grass</a>                                                            
+                    
+  </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">pix</i>Game<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/kuis/tebakGambar?apikey=APIKEY" target="_blank" >Tebak gambar</a>
+ <li>     <a target="_blank" href="/api/game/tebaklirik?apikey=APIKEY" target="_blank" >Tebak lirik</a>
+ <li>     <a target="_blank" href="/api/game/tebakkata?apikey=APIKEY" target="_blank" >Tebak kata</a>
+ <li>     <a target="_blank" href="/api/game/tebakkalimat?apikey=APIKEY" target="_blank" >Tebak kalimat</a>
+ <li>     <a target="_blank" href="/api/game/tebaktebakan?apikey=APIKEY" target="_blank" >Tebak tebakan</a>
+ <li>     <a target="_blank" href="/api/game/tebakjenaka?apikey=APIKEY" target="_blank" >Tebak jenaka</a>
+ <li>     <a target="_blank" href="/api/game/tebakbendera?apikey=APIKEY" target="_blank" >Tebak bendera</a>
+ <li>     <a target="_blank" href="/api/game/tebakkimia?apikey=APIKEY" target="_blank" >Tebak kimia</a>
+ <li>     <a target="_blank" href="/api/game/tebakchara?apikey=APIKEY" target="_blank" >Tebak chara</a>
+ <li>     <a target="_blank" href="/api/kuis/caklontong?apikey=APIKEY" target="_blank" >Cak lontong</a>
+ <li>     <a target="_blank" href="/api/game/family100?apikey=APIKEY" target="_blank" >family 100</a>
+          
+ </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">view_day</i>Islamic<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/muslim/asmaulhusna?apikey=APIKEY" target="_blank" >Asmaul Husna</a>
+ <li>     <a target="_blank" href="/api/muslim/jadwalshalat?kota=banyuwangi&apikey=APIKEY" target="_blank" >jadwal shalat </a>
+ <li>     <a target="_blank" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=APIKEY" target="_blank" >Hadist sahih</a>
+  <li>     <a target="_blank" href="/api/muslim/quran?surah=1&ayat=2&apikey=APIKEY" target="_blank" >Al Qur'an</a>
+ <li>     <a target="_blank" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=APIKEY" target="_blank" >Kisah Nabi</a>
+     
+ </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">add_reaction</i>Simi-Simi<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/fun/simisimi?text=assalamualaikum&apikey=APIKEYMU" target="_blank" >Simi IND</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi-ind2?text=hallo%20kak&apikey=APIKEYMU" target="_blank" >Simi IND2</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi2?text=how%20are%20you&apikey=APIKEYMU" target="_blank" >Simi EN</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi-en2?text=Hi%20friend%20&apikey=APIKEYMU" target="_blank" >Simi EN2</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi3?text=arigatou&apikey=APIKEYMU" target="_blank" >Simi JPN</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi-jp2?text=arigatou&apikey=APIKEYMU" target="_blank" >Simi JPN2</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi4?text=assalamualaikum ya aqhi&apikey=APIKEYMU" target="_blank" >Simi ARB</a>
+ <li>     <a target="_blank" href="/api/fun/simisimi-ar2?text=la%20tahzan&apikey=APIKEYMU" target="_blank" >Simi ARB2</a>
+             
+ </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">mood</i>Primbon<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/primbon/artimimpi?text=bangkrut&apikey=APIKEYMU" target="_blank" >Arti mimpi</a>
+ <li>     <a target="_blank" href="/api/primbon/artinama?text=gw&apikey=APIKEYMU" target="_blank" >Arti nama</a>
+       
+ </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">history_edu</i>Random Image<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+    <li>     <a target="_blank" href="/api/wallpaper/trans?apikey=APIKEY">wallhp Transformers </a>
+     <li>     <a target="_blank" href="/api/wallpaper/jeni?apikey=APIKEY">wallhp jeni blpk </a>
+     <li>     <a target="_blank" href="/api/wallpaper/jiso?apikey=APIKEY">wallhp jisso blpkl </a>
+     <li>     <a target="_blank" href="/api/wallpaper/cecan2?apikey=APIKEY">wallhp cecan </a>
+     <li>     <a target="_blank" href="/api/wallpaper/cogan2?apikey=APIKEY">wallhp cogan </a>
+     <li>     <a target="_blank" href="/api/wallpaper/satanic?apikey=APIKEY">wallhp satanic </a>
+     <li>     <a target="_blank" href="/api/wallpaper/katakata?apikey=APIKEY">wallhp quotes </a>
+     <li>     <a target="_blank" href="/api/wallpaper/pentol?apikey=APIKEY">wallhp pentol </a>
+     <li>     <a target="_blank" href="/api/wallpaper/kartun?apikey=APIKEY">wallhp cartoon </a>
+     <li>     <a target="_blank" href="/api/wallpaper/tatasurya?apikey=APIKEY">wallhp planet </a>
+     <li>     <a target="_blank" href="/api/wallpaper/cyberspace?apikey=APIKEY">wallhp cyberspace </a>
+     <li>     <a target="_blank" href="/api/wallpaper/gaming?apikey=APIKEY">wallhp gaming </a>
+     <li>     <a target="_blank" href="/api/wallpaper/islami?apikey=APIKEY"> wallhp islami </a>
+     <li>     <a target="_blank" href="/api/wallpaper/programing?apikey=APIKEY"> wallhp programing </a>
+     <li>     <a target="_blank" href="/api/wallpaper/teknologi?apikey=APIKEY"> wallhp teknologi </a>
+     <li>     <a target="_blank" href="/api/wallpaper/mountain?apikey=APIKEY"> wallhp mountain </a>
+     <li>     <a target="_blank" href="/api/wallpaper/ryujin?apikey=APIKEY" target="_blank" >Random Ryujin ityz</a>
+      <li>     <a target="_blank" href="/api/wallpaper/rose?apikey=APIKEY" target="_blank" >Random rose blpk</a>
+      <li>     <a target="_blank" href="/api/wallpaper/justina?apikey=APIKEY" target="_blank" >Random justina xie</a>
+      <li>     <a target="_blank" href="/api/wallpaper/random/blackpink?apikey=APIKEY" target="_blank" >Random blackpink</a>                        
+      <li>     <a target="_blank" href="/api/wallpaper/doraemon?apikey=APIKEY" target="_blank" >Random Doraemon</a>                      
+      <li>     <a target="_blank" href="/api/wallpaper/ppcouple?apikey=APIKEY" target="_blank" >Random ppcouple</a>
+      <li>     <a target="_blank" href="/api/wallpaper/kpop?apikey=APIKEY" target="_blank" >Random kpop</a>
+      <li>     <a target="_blank" href="/api/wallpaper/hekel?apikey=APIKEY" target="_blank" >Random hekel</a>
+      <li>     <a target="_blank" href="/api/wallpaper/pubg?apikey=APIKEY" target="_blank" >Random PUBG</a>
+      <li>     <a target="_blank" href="/api/wallpaper/cogan?apikey=APIKEY" target="_blank" >Random cogan</a>
+      <li>     <a target="_blank" href="/api/wallpaper/cecan?apikey=APIKEY" target="_blank" >Random cecan</a>
+      <li>     <a target="_blank" href="/api/wallpaper/aesthetic?apikey=APIKEY" target="_blank" >Random Aesthetic</a>
+      <li>     <a target="_blank" href="/api/wallpaper/wallhp?apikey=APIKEY" target="_blank" >Random wallhp aesthetic</a>
+      <li>     <a target="_blank" href="/api/wallpaper/anime?apikey=APIKEY" target="_blank" >Random wallhp anime</a>
+      <li>     <a target="_blank" href="/api/asupan?apikey=APIKEY" target="_blank" >Random asupan</a>
+      <li>     <a target="_blank" href="/api/wallpaper/kucing?apikey=APIKEY" target="_blank" >Random Kucing</a>
+      <li>     <a target="_blank" href="/api/wallpaper/anjing?apikey=APIKEY" target="_blank" >Random Anjing</a>
+               
+ </ul>
+       </li>
+                    
+       <li>
+ <a href="#"><i class="material-icons-two-tone">handshake</i>Nsfw<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/wallpaper/nsfwloli?apikey=APIKEY" target="_blank" >Nswf loli</a>
+          <li>     <a target="_blank" href="/api/nsfw/ahegao?apikey=APIKEY" target="_blank" >nsfw ahegao</a>
+ <li>     <a target="_blank" href="/api/nsfw/ass?apikey=APIKEY" target="_blank" >nsfw ass</a>
+ <li>     <a target="_blank" href="/api/nsfw/bdsm?apikey=APIKEY" target="_blank" >Nswf bdsm</a>
+ <li>     <a target="_blank" href="/api/nsfw/blowjob?apikey=APIKEY" target="_blank" >nsfw blowjob</a>
+		  <li>     <a target="_blank" href="/api/nsfw/cuckold?apikey=APIKEY" target="_blank" >nsfw cuckold</a>
+		  <li>     <a target="_blank" href="/api/nsfw/cum?apikey=APIKEY" target="_blank" >nsfw cum</a>
+ <li>     <a target="_blank" href="/api/nsfw/ero?apikey=APIKEY" target="_blank" >nsfw ero</a>
+ <li>     <a target="_blank" href="/api/nsfw/femdom?apikey=APIKEY" target="_blank" >nsfw femdom</a>
+ <li>     <a target="_blank" href="/api/nsfw/foot?apikey=APIKEY" target="_blank" >nsfw foot</a>
+		   <li>     <a target="_blank" href="/api/nsfw/gangbang?apikey=APIKEY" target="_blank" >nsfw gangbanh</a>
+		   <li>     <a target="_blank" href="/api/nsfw/glasses?apikey=APIKEY" target="_blank" >nsfw glasses</a>
+ <li>     <a target="_blank" href="/api/nsfw/hentai?apikey=APIKEY" target="_blank" >nsfw hentai</a>
+ <li>     <a target="_blank" href="/api/nsfw/gifs?apikey=APIKEY" target="_blank" >nsfw gifs</a>
+ <li>     <a target="_blank" href="/api/nsfw/jahy?apikey=APIKEY" target="_blank" >nsfw jahy</a>
+		   <li>     <a target="_blank" href="/api/nsfw/manga?apikey=APIKEY" target="_blank" >nsfw manga</a>
+		   <li>     <a target="_blank" href="/api/nsfw/masturbation?apikey=APIKEY" target="_blank" >nsfw mstb</a>
+ <li>     <a target="_blank" href="/api/nsfw/neko?apikey=APIKEY" target="_blank" >nsfw neko</a>
+ <li>     <a target="_blank" href="/api/nsfw/orgy?apikey=APIKEY" target="_blank" >nsfw orgy</a>
+ <li>     <a target="_blank" href="/api/nsfw/panties?apikey=APIKEY" target="_blank" >nsfw panties</a>
+		   <li>     <a target="_blank" href="/api/nsfw/pussy?apikey=APIKEY" target="_blank" >nsfw pussy</a>
+		   <li>     <a target="_blank" href="/api/nsfw/neko2?apikey=APIKEY" target="_blank" >nsfw neko2</a>
+		   <li>     <a target="_blank" href="/api/nsfw/tentacles?apikey=APIKEY" target="_blank" >nsfw tentacles</a>
+ <li>     <a target="_blank" href="/api/nsfw/thighs?apikey=APIKEY" target="_blank" >nsfw things</a>
+ <li>     <a target="_blank" href="/api/nsfw/yuri?apikey=APIKEY" target="_blank" >nsfw yuri</a>
+ <li>     <a target="_blank" href="/api/nsfw/zettai?apikey=APIKEY" target="_blank" >nsfw zettai</a>
+         
+ </ul>
+       </li>
+                    
+       <li>
+ <a href="#"><i class="material-icons-two-tone">cruelty_free</i>Random Anime<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/random/cosplay?apikey=APIKEY" target="_blank" >Random Cosplay</a>
+ <li>     <a target="_blank" href="/api/wallpaper/waifu?apikey=APIKEY" target="_blank" >Waifu</a>
+ <li>     <a target="_blank" href="/api/wallpaper/waifu2?apikey=APIKEY" target="_blank" >Waifu2</a>                       
+<li>     <a target="_blank" href="/api/wallpaper/shota?apikey=APIKEY" target="_blank" >shota</a>
+		   <li>     <a target="_blank" href="/api/wallpaper/loli?apikey=APIKEY" target="_blank" >anime loli</a>
+	      <li>     <a target="_blank" href="/api/wallpaper/yotsuba?apikey=APIKEY" target="_blank" >Random yotsuba</a>
+<li>     <a target="_blank" href="/api/wallpaper/shinomiya?apikey=APIKEY" target="_blank" >Random shinomiya</a>
+<li>     <a target="_blank" href="/api/wallpaper/yumeko?apikey=APIKEY" target="_blank" >Random yumeko</a>
+<li>     <a target="_blank" href="/api/wallpaper/tejina?apikey=APIKEY" target="_blank" >Random tejina</a>
+<li>     <a target="_blank" href="/api/wallpaper/chiho?apikey=APIKEY" target="_blank" >Random chiho</a>
+ <li>     <a target="_blank" href="/api/wallpaper/boruto?apikey=APIKEY" target="_blank" >Random boruto</a>
+ <li>     <a target="_blank" href="/api/wallpaper/kaori?apikey=APIKEY" target="_blank" >Random kaori</a>
+<li>     <a target="_blank" href="/api/wallpaper/shizuka?apikey=APIKEY" target="_blank" >Random shizuka</a>
+<li>     <a target="_blank" href="/api/wallpaper/kaga?apikey=APIKEY" target="_blank" >Random kaga</a>
+<li>     <a target="_blank" href="/api/wallpaper/kotori?apikey=APIKEY" target="_blank" >Random kotori</a>
+<li>     <a target="_blank" href="/api/wallpaper/mikasa?apikey=APIKEY" target="_blank" >Random mikasa</a>
+<li>     <a target="_blank" href="/api/wallpaper/akiyama?apikey=APIKEY" target="_blank" >Random akiyama</a>
+<li>     <a target="_blank" href="/api/wallpaper/gremory?apikey=APIKEY" target="_blank" >Random gremory</a>
+<li>     <a target="_blank" href="/api/wallpaper/isuzu?apikey=APIKEY" target="_blank" >Random isuzu</a>
+<li>     <a target="_blank" href="/api/wallpaper/shina?apikey=APIKEY" target="_blank" >Random shina</a>
+<li>     <a target="_blank" href="/api/wallpaper/kagura?apikey=APIKEY" target="_blank" >Random kagura</a>
+<li>     <a target="_blank" href="/api/wallpaper/shinka?apikey=APIKEY" target="_blank" >Random shinka</a>
+<li>     <a target="_blank" href="/api/wallpaper/eba?apikey=APIKEY" target="_blank" >Random eba</a>
+ <li>     <a target="_blank" href="/api/wallpaper/elaina?apikey=APIKEY" target="_blank" >Random elaina</a>
+ <li>     <a target="_blank" href="/api/wallpaper/yuri?apikey=APIKEY" target="_blank" >Random yuri</a>
+ <li>     <a target="_blank" href="/api/wallpaper/erza?apikey=APIKEY" target="_blank" >Random erza</a>
+ <li>     <a target="_blank" href="/api/wallpaper/hinata?apikey=APIKEY" target="_blank" >Random hinata</a>
+ <li>     <a target="_blank" href="/api/wallpaper/minato?apikey=APIKEY" target="_blank" >Random minato</a>
+ <li>     <a target="_blank" href="/api/wallpaper/naruto?apikey=APIKEY" target="_blank" >Random Naruto</a>
+ <li>     <a target="_blank" href="/api/wallpaper/sagiri?apikey=APIKEY" target="_blank" >Random Sagiri</a>
+ <li>     <a target="_blank" href="/api/wallpaper/nezuko?apikey=APIKEY" target="_blank" >Random nezuko</a>
+ <li>     <a target="_blank" href="/api/wallpaper/rize?apikey=APIKEY" target="_blank" >Random rize</a>
+ <li>     <a target="_blank" href="/api/wallpaper/ana?apikey=APIKEY" target="_blank" >Random Anna</a>
+ <li>     <a target="_blank" href="/api/wallpaper/deidara?apikey=APIKEY" target="_blank" >Random Deidara</a>
+<li>     <a target="_blank" href="/api/wallpaper/yuki?apikey=APIKEY" target="_blank" >Random Yuki</a>
+<li>     <a target="_blank" href="/api/wallpaper/ana?apikey=APIKEY" target="_blank" >Random Anna</a>
+<li>     <a target="_blank" href="/api/wallpaper/asuna?apikey=APIKEY" target="_blank" >Random Asuna</a>
+<li>     <a target="_blank" href="/api/wallpaper/ayuzawa?apikey=APIKEY" target="_blank" >Random Ayuzawa</a>
+<li>     <a target="_blank" href="/api/wallpaper/chitoge?apikey=APIKEY" target="_blank" >Random Chitoge</a>
+<li>     <a target="_blank" href="/api/wallpaper/emilia?apikey=APIKEY" target="_blank" >Random Emilia</a>
+<li>     <a target="_blank" href="/api/wallpaper/hestia?apikey=APIKEY" target="_blank" >Random hestia</a>
+<li>     <a target="_blank" href="/api/wallpaper/inori?apikey=APIKEY" target="_blank" >Random inori</a>
+<li>     <a target="_blank" href="/api/wallpaper/itachi?apikey=APIKEY" target="_blank" >Random itachi</a>
+<li>     <a target="_blank" href="/api/wallpaper/madara?apikey=APIKEY" target="_blank" >Random Madara</a>
+ <li>     <a target="_blank" href="/api/wallpaper/sakura?apikey=APIKEY" target="_blank" >Random sakura</a>
+ <li>     <a target="_blank" href="/api/wallpaper/sasuke?apikey=APIKEY" target="_blank" >Random Sasuke</a>
+ <li>     <a target="_blank" href="/api/wallpaper/tsunade?apikey=APIKEY" target="_blank" >Random Tsunade</a>
+ <li>     <a target="_blank" href="/api/wallpaper/onepiece?apikey=APIKEY" target="_blank" >Random one piece</a>
+ <li>     <a target="_blank" href="/api/wallpaper/mobil?apikey=APIKEY" target="_blank" >Random mobil</a>
+ <li>     <a target="_blank" href="/api/wallpaper/montor?apikey=APIKEY" target="_blank" >Random montor</a>
+ <li>     <a target="_blank" href="/api/wallpaper/boneka-chucky?apikey=APIKEY" target="_blank" >Random boneka chucky</a>
+      <li>     <a target="_blank" href="/api/wallpaper/keneki?apikey=APIKEY" target="_blank" >Random keneki</a>
+ <li>     <a target="_blank" href="/api/wallpaper/megumin?apikey=APIKEY" target="_blank" >Random Megumin</a>
+ <li>     <a target="_blank" href="/api/wallpaper/toukachan?apikey=APIKEY" target="_blank" >Random toukachan</a>
+ <li>     <a target="_blank" href="/api/wallpaper/akira?apikey=APIKEY" target="_blank" >Random akira</a>
+		   <li>     <a target="_blank" href="/api/wallpaper/itori?apikey=APIKEY" target="_blank" >Random itori</a>
+		   <li>     <a target="_blank" href="/api/wallpaper/kurumi?apikey=APIKEY" target="_blank" >Random kurumi</a>
+ <li>     <a target="_blank" href="/api/wallpaper/miku?apikey=APIKEY" target="_blank" >Random miku</a>
+ <li>     <a target="_blank" href="/api/wallpaper/pokemon?apikey=APIKEY" target="_blank" >Random pokemon</a>
+       
+ </ul>
+       </li>
+       <li>
+ <a href="#"><i class="material-icons-two-tone">fitbit</i>Sticker<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+ <ul class="sub-menu">
+     <li>     <a target="_blank" href="/api/maker/ttp?text=gw&apikey=APIKEY" target="_blank" >TTP maker</a>
+ <li>     <a target="_blank" href="/api/maker/attp?text=gw&apikey=APIKEY" target="_blank" >ATTP MAKER</a>
+ <li>     <a target="_blank" href="/api/canvas/welcome?username=gwganz&memberCount=257&gcname=Whatsapp Bot Nodejs&bg=&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&gcicon=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&apikey=APIKEY" target="_blank" >Welcome Canvas</a>
+             
+ </ul>
+       </li>
+                    
+     <li>
+ <a onclick="myFunction()"><i class="material-icons-two-tone">inbox</i>Hosting Murah<span class="badge rounded-pill badge-danger float-end">30+</span></a>
+       </li>
+   <li class="sidebar-title">
+                    Follow Me
+   </li>
+   <li>
+                    <a href="//Instagram.com/ftditzzxy"><i class="material-icons-two-tone">backup</i>Instagram</a>
+                </li>
+                <li>
+                    <a href="//wa.me/628988293493"><i class="material-icons-two-tone">sports_golf</i>Whatsapp</a>
+                </li>
+                <li>
+                    <a href="//saweria.co/syditzzy"><i class="material-icons-two-tone">whatshot</i>Donate</a>
+                </li>
+
+       </ul>
+   </div>
+    </div>
+    <div class="app-container">
+   <div class="app-header">
+       <nav class="navbar navbar-light navbar-expand-lg">
+   <div class="container-fluid">
+       <div class="navbar-nav" id="navbarNav">
+ <ul class="navbar-nav">
+     <li class="nav-item">
+    <a class="nav-link hide-sidebar-toggle-button" href="#"><i class="material-icons-outlined">mood</i></a>
+     </li>
+
+     <li class="nav-item dropdown hidden-on-mobile">
+    <a class="nav-link dropdown-toggle" href="#" id="exploreDropdownLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="material-icons-outlined"></i>
+    </a>
+
+     </li>
+                            
+ </ul>
+
+       </div>
+       <div class="d-flex">
+ <ul class="navbar-nav">
+     <li class="nav-item hidden-on-mobile">
+    <a class="nav-link active" href="#">Applications</a>
+     </li>
+
+     <li class="nav-item hidden-on-mobile">
+    <a class="nav-link nav-notifications-toggle" id="notificationsDropDown" href="#" data-bs-toggle="dropdown">4</a>
+    <div class="dropdown-menu dropdown-menu-end notifications-dropdown" aria-labelledby="notificationsDropDown">
+        <h6 class="dropdown-header">Notifications</h6>
+
+    </div>
+     </li>
+ </ul>
+ <p class="widget-stats-amount"id="clock"></p>
+       </div>
+   </div>
+                
+       </nav>
+   </div>
+
+<div class="app-content">
+    <div class="content-wrapper">
+   <div class="container">
+       <h2 class="my-5">Dashboard</h2>
+            
+       <div class="row">
+   <div class="col-xl-4">
+       <div class="card widget widget-stats">
+ <div class="card-body">
+     <div class="widget-stats-container d-flex">
+    <div class="widget-stats-icon widget-stats-icon-primary">
+        <i class="material-icons-outlined">mood </i>
+    </div>
+    <div class="widget-stats-content flex-fill">
+        <span class="widget-stats-title">Total Visitor</span>
+        <span class="widget-stats-amount" id="visitor"></span>
+
+    </div>
+
+     </div>
+ </div>
+       </div>
+   </div>
+   <div class="col-xl-4">
+       <div class="card widget widget-stats">
+ <div class="card-body">
+     <div class="widget-stats-container d-flex">
+    <div class="widget-stats-icon widget-stats-icon-warning">
+        <i class="material-icons-outlined">wifi</i>
+    </div>
+    <div class="widget-stats-content flex-fill">
+        <span class="widget-stats-title">Your IP</span>
+
+        <span class="widget-stats-amount" id="ipanda">192.0.0.1</span>
+                                    
+    </div>
+
+     </div>
+ </div>
+       </div>
+   </div>
+   <div class="col-xl-4">
+       <div class="card widget widget-stats">
+ <div class="card-body">
+     <div class="widget-stats-container d-flex">
+    <div class="widget-stats-icon widget-stats-icon-danger">
+        <i class="material-icons-outlined">key</i>
+    </div>
+    <div class="widget-stats-content flex-fill">
+        <span class="widget-stats-title">Apikey Info</span>
+
+        <span class="widget-stats-amount">wibu</span>
+
+    </div>
+
+     </div>
+ </div>
+       </div>
+   </div>
+       </div>
+            
+<a target="_blank" href="//saweria.co/syditzzy" type="button" class="btn btn-dark btn-rounded m-b-xs m-r-xs" target="_blank"><i class="material-icons"> whatshot</i>Buy Me a coffe?</a>    
+            
+ </div>
+       </div>
+   </div>
+       </div>
+   </div>
+    </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+
+	
+<!-- Javascripts -->
+	<script>
+		const Toast = Swal.mixin({
+  toast: true,
+  position: 'bottom-left',
+  showConfirmButton: false,
+  timer: 3500
+});
+ 
+Toast.fire({
+  type: 'success',
+  title: 'Free Apikey, Jgan Spam Ya:) '
+})
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.countapi.xyz/hit/mee/visits");
+xhr.responseType = "json";
+xhr.onload = function() {
+    document.getElementById('visitor').innerText = this.response.value;
+}
+xhr.send();
+window.setTimeout("getip()",1000);function getip(){
+var xhr= new XMLHttpRequest();
+var url='https://api.xteam.xyz/cekip';
+xhr.onloadend=function(){data=JSON.parse(this.responseText);
+document.getElementById("ipanda").textContent=data.response
+document.getElementById("userhit").innerText=data.userhit};
+xhr.open("GET",url,true);
+xhr.send();}
+setInterval(function realtimeclock() {
+    const rtClock = new Date();
+    var hours = rtClock.getHours()
+    var minutes = rtClock.getMinutes()
+    var seconds = rtClock.getSeconds()
+
+    hours = (hours > 12) ? hours - 12 : hours
+
+    hours = ('0' + hours).slice(-2)
+    minutes = ('0' + minutes).slice(-2)
+    seconds = ('0' + seconds).slice(-2)
+    arrBulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+
+var d = new Date();
+var tanggal = d.getDate(); 
+var bln = d.getMonth();
+var bulan = arrBulan[bln]
+var tahun = d.getFullYear(); 
+const tgl = tanggal +" : "+ bulan+ " : " + tahun
+
+
+    document.getElementById('clock').innerHTML =  + hours + ':' + minutes + ':' + seconds + "</br>" + tgl
+}, 500)
+var source = "https://assets.shiziyama.ml/mp3/music.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
+</script>
+<script>var s="=tdsjqu?gvodujpo!nzGvodujpo)*!|wbs!vsm!>!#iuuqt;00tij{jzbnb/nm#<!!xjoepx/pqfo)vsm*<~=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0cpputusbq0kt0qpqqfs/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0cpputusbq0kt0cpputusbq/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0qfsgfdutdspmm0qfsgfdu.tdspmmcbs/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0qbdf0qbdf/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0ijhimjhiu0ijhimjhiu/qbdl/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0qmvhjot0cmpdlVJ0krvfsz/cmpdlVJ/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0kt0nbjo/njo/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0kt0dvtupn/kt#?=0tdsjqu?=tdsjqu!tsd>#iuuqt;00bttfut/tij{jzbnb/nm0kt0qbhft0cmpdlvj/kt#?=0tdsjqu?=0cpez?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript><script>&#13;
+&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#109;&#121;&#70;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#40;&#41;&#32;&#123;&#13;
+&#118;&#97;&#114;&#32;&#117;&#114;&#108;&#32;&#61;&#32;&#34;&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#34;&#59;&#13;
+&#32;&#32;&#119;&#105;&#110;&#100;&#111;&#119;&#46;&#111;&#112;&#101;&#110;&#40;&#117;&#114;&#108;&#41;&#59;&#13;
+&#125;&#13;
+</script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#98;&#111;&#111;&#116;&#115;&#116;&#114;&#97;&#112;&#47;&#106;&#115;&#47;&#112;&#111;&#112;&#112;&#101;&#114;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#98;&#111;&#111;&#116;&#115;&#116;&#114;&#97;&#112;&#47;&#106;&#115;&#47;&#98;&#111;&#111;&#116;&#115;&#116;&#114;&#97;&#112;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#115;&#99;&#114;&#111;&#108;&#108;&#47;&#112;&#101;&#114;&#102;&#101;&#99;&#116;&#45;&#115;&#99;&#114;&#111;&#108;&#108;&#98;&#97;&#114;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#112;&#97;&#99;&#101;&#47;&#112;&#97;&#99;&#101;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#104;&#105;&#103;&#104;&#108;&#105;&#103;&#104;&#116;&#47;&#104;&#105;&#103;&#104;&#108;&#105;&#103;&#104;&#116;&#46;&#112;&#97;&#99;&#107;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#98;&#108;&#111;&#99;&#107;&#85;&#73;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#98;&#108;&#111;&#99;&#107;&#85;&#73;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#106;&#115;&#47;&#109;&#97;&#105;&#110;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#106;&#115;&#47;&#99;&#117;&#115;&#116;&#111;&#109;&#46;&#106;&#115;"></script>&#13;
+<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#115;&#115;&#101;&#116;&#115;&#46;&#115;&#104;&#105;&#122;&#105;&#121;&#97;&#109;&#97;&#46;&#109;&#108;&#47;&#106;&#115;&#47;&#112;&#97;&#103;&#101;&#115;&#47;&#98;&#108;&#111;&#99;&#107;&#117;&#105;&#46;&#106;&#115;"></script>&#13;
+</body></noscript>
+
+</html>
